@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leitor de Data Books - Dormente de Concreto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Sistema de extração documental</p>
+      <h1>Leitor de Data Books em PDF</h1>
+      <p class="subtitle">Faça upload dos Data Books da Cavan em PDF. O site lê os certificados, preenche a inspeção documental baseada no Excel enviado e permite exportar o resultado.</p>
+    </div>
+    <div class="hero-card">
+      <span class="metric" id="totalFiles">0</span>
+      <span>PDFs lidos</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel upload-panel">
+      <div class="dropzone" id="dropzone">
+        <input id="pdfInput" type="file" accept="application/pdf" multiple />
+        <div class="drop-icon">📄</div>
+        <h2>Selecione ou arraste os PDFs de Data Book</h2>
+        <p>Você pode enviar vários arquivos de uma vez. A leitura acontece no navegador, sem banco de dados.</p>
+        <button class="primary" id="selectBtn" type="button">Escolher PDFs</button>
+      </div>
+      <div class="actions">
+        <button id="clearBtn" type="button" class="secondary">Limpar leitura</button>
+        <button id="exportJsonBtn" type="button" class="secondary" disabled>Exportar JSON</button>
+        <button id="exportCsvBtn" type="button" class="secondary" disabled>Exportar CSV</button>
+        <button id="exportXlsxBtn" type="button" class="primary" disabled>Exportar XLSX</button>
+      </div>
+      <div class="status" id="status">Aguardando PDFs...</div>
+    </section>
+
+    <section class="grid kpis" id="kpis">
+      <article class="kpi"><span id="kpiDataBooks">0</span><small>Data Books</small></article>
+      <article class="kpi"><span id="kpiLotes">0</span><small>Lotes identificados</small></article>
+      <article class="kpi"><span id="kpiCertificados">0</span><small>Certificados lidos</small></article>
+      <article class="kpi"><span id="kpiPendencias">0</span><small>Itens NOK/NA</small></article>
+    </section>
+
+    <section class="panel hidden" id="summaryPanel">
+      <div class="section-head">
+        <h2>Resumo dos Data Books</h2>
+        <input id="searchInput" type="search" placeholder="Filtrar por lote, cliente, item, seção..." />
+      </div>
+      <div class="table-wrap">
+        <table id="summaryTable">
+          <thead>
+            <tr>
+              <th>Arquivo</th>
+              <th>Data Book</th>
+              <th>Cliente</th>
+              <th>Período</th>
+              <th>Modelo</th>
+              <th>Qtd.</th>
+              <th>Lotes capa</th>
+              <th>Certificados</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="checklistPanel">
+      <div class="section-head">
+        <div>
+          <h2>Checklist documental extraído</h2>
+          <p class="muted">As linhas abaixo seguem a estrutura do Excel: seção, item, tolerância, valores obtidos e status.</p>
+        </div>
+      </div>
+      <div class="table-wrap tall">
+        <table id="checklistTable">
+          <thead>
+            <tr>
+              <th>Data Book</th>
+              <th>Seção</th>
+              <th>Item</th>
+              <th>Descrição</th>
+              <th>Tolerância</th>
+              <th>Valores obtidos</th>
+              <th>Status</th>
+              <th>Evidência</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="lotsPanel">
+      <div class="section-head">
+        <h2>Certificados por lote</h2>
+      </div>
+      <div class="table-wrap tall">
+        <table id="lotsTable">
+          <thead>
+            <tr>
+              <th>Data Book</th>
+              <th>Lote</th>
+              <th>Data produção</th>
+              <th>Tipo</th>
+              <th>Chumbadores</th>
+              <th>Bobinas</th>
+              <th>Comp. 28d</th>
+              <th>Tração 28d</th>
+              <th>Temp. máx.</th>
+              <th>Página</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Versão pronta para GitHub Pages.</strong> Os campos são baseados na aba DOCUMENTAL do Excel enviado e no padrão dos PDFs CAVAN anexados.
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="assets/template-fields.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

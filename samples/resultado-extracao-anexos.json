@@ -1,0 +1,5348 @@
+[
+  {
+    "arquivo": "001_26 - DB CAVAN SL - RUMO_FMT - JANEIRO(4).pdf",
+    "paginas": 260,
+    "cabecalho": {
+      "fornecedor": "CAVAN Pré Moldado S/A",
+      "cliente": "RUMO BITOLA LARGA FMT",
+      "mes": "JANEIRO DE 2026",
+      "periodo_inicio": "07/01/2026",
+      "periodo_fim": "30/01/2026",
+      "data_book": "001/26",
+      "lotes": [
+        "02349",
+        "02505",
+        "02504",
+        "02511",
+        "02510",
+        "02514",
+        "02513",
+        "02517",
+        "02516",
+        "02520",
+        "02518",
+        "02523",
+        "02521",
+        "02525",
+        "02524",
+        "02526",
+        "02528",
+        "02527",
+        "02531",
+        "02530",
+        "02534",
+        "02533",
+        "02537",
+        "02536",
+        "02539",
+        "02538",
+        "02541",
+        "02540",
+        "02543",
+        "02542",
+        "02545",
+        "02544",
+        "02547",
+        "02546",
+        "02607",
+        "02548",
+        "02608"
+      ],
+      "quantidade": 12077,
+      "produto": "Dormente monobloco de concreto protendido para via de bitola larga com fixações tipo Pandrol Fastclip FC isoladas e trilhos TR68 (ou UIC60, com uso de isoladores especiais) na inclinação 1/40.",
+      "modelo": "VCL/DMB-FXPFC-01"
+    },
+    "certificados": [
+      {
+        "page": 7,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02349",
+        "data_producao": "07/01/2026",
+        "lotes_chumbadores": "M - 340 e M - 341 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063830787"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              37.98,
+              35.36
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              75.21,
+              70.22
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              80.16,
+              78.22
+            ],
+            "tracao_flexao": [
+              8.1,
+              8.9
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              87.08,
+              78.85
+            ],
+            "tracao_flexao": [
+              9.4,
+              9.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.5,
+              29.3,
+              29.6
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              33.8,
+              34.9,
+              36.6
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.1,
+              43.9,
+              44.4
+            ]
+          },
+          {
+            "hora": "16:00",
+            "leituras": [
+              50.4,
+              50.6,
+              45.1
+            ]
+          }
+        ],
+        "temperatura_max": 50.6
+      },
+      {
+        "page": 8,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02504",
+        "data_producao": "08/01/2026",
+        "lotes_chumbadores": "M-344 e M-279 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838452"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              36.24,
+              39.23
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              57.75,
+              63.06
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              65.35,
+              65.43
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.8
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              71.19,
+              69.66
+            ],
+            "tracao_flexao": [
+              8.8,
+              8.6
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              32.0,
+              39.9,
+              42.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              40.3,
+              51.6,
+              50.2
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              51.1,
+              53.6,
+              51.4
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              47.6,
+              51.5,
+              49.7
+            ]
+          }
+        ],
+        "temperatura_max": 53.6
+      },
+      {
+        "page": 9,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02505",
+        "data_producao": "08/01/2026",
+        "lotes_chumbadores": "M - 279 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838422"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              36.1,
+              34.2
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              80.38,
+              77.13
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              81.98,
+              76.47
+            ],
+            "tracao_flexao": [
+              8.9,
+              8.2
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              88.91,
+              85.09
+            ],
+            "tracao_flexao": [
+              8.1,
+              8.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.3,
+              32.0,
+              35.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              39.6,
+              43.0,
+              49.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.7,
+              51.9,
+              54.4
+            ]
+          },
+          {
+            "hora": "00:00",
+            "leituras": [
+              51.6,
+              53.6,
+              53.7
+            ]
+          }
+        ],
+        "temperatura_max": 54.4
+      },
+      {
+        "page": 10,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02510",
+        "data_producao": "09/01/2026",
+        "lotes_chumbadores": "M-260 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838439"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.7,
+            "compressao_axial": [
+              38.12,
+              37.08
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              65.54,
+              62.1
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              68.59,
+              62.1
+            ],
+            "tracao_flexao": [
+              8.1,
+              8.0
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              83.06,
+              84.73
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              36.1,
+              34.1,
+              42.9
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              53.1,
+              44.0,
+              53.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              56.9,
+              52.4,
+              54.7
+            ]
+          },
+          {
+            "hora": "18:00",
+            "leituras": [
+              55.8,
+              52.5,
+              52.5
+            ]
+          }
+        ],
+        "temperatura_max": 56.9
+      },
+      {
+        "page": 11,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02511",
+        "data_producao": "09/01/2026",
+        "lotes_chumbadores": "M - 231, M - 260 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838444",
+          "1063838458"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              34.16,
+              29.87
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              71.0,
+              69.19
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              77.96,
+              75.51
+            ],
+            "tracao_flexao": [
+              7.6,
+              8.1
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              84.56,
+              82.8
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.3
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              33.7,
+              38.0,
+              35.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              44.4,
+              50.7,
+              48.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.5,
+              54.5,
+              51.2
+            ]
+          },
+          {
+            "hora": "00:00",
+            "leituras": [
+              41.9,
+              41.7,
+              42.3
+            ]
+          }
+        ],
+        "temperatura_max": 54.5
+      },
+      {
+        "page": 12,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02513",
+        "data_producao": "12/01/2026",
+        "lotes_chumbadores": "M-345 e M-351 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838456",
+          "1063838419"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.7,
+            "compressao_axial": [
+              37.94,
+              38.04
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              64.95,
+              64.78
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              68.83,
+              69.12
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              78.99,
+              73.49
+            ],
+            "tracao_flexao": [
+              9.0,
+              10.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.6,
+              32.7,
+              34.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              41.4,
+              37.3,
+              47.5
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              48.0,
+              50.7,
+              50.7
+            ]
+          },
+          {
+            "hora": "16:00",
+            "leituras": [
+              46.1,
+              50.7,
+              47.6
+            ]
+          }
+        ],
+        "temperatura_max": 50.7
+      },
+      {
+        "page": 13,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02514",
+        "data_producao": "12/01/2026",
+        "lotes_chumbadores": "M-231 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063830788",
+          "1063838462"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              34.3,
+              37.14
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              76.53,
+              72.87
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              79.45,
+              79.05
+            ],
+            "tracao_flexao": [
+              8.3,
+              8.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              94.84,
+              89.96
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.3
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              31.9,
+              38.7,
+              42.2
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              38.5,
+              51.4,
+              50.1
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.2,
+              53.4,
+              51.3
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              47.8,
+              51.5,
+              49.9
+            ]
+          }
+        ],
+        "temperatura_max": 53.4
+      },
+      {
+        "page": 14,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02516",
+        "data_producao": "13/01/2026",
+        "lotes_chumbadores": "L - 224 e 279 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838462"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              36.33,
+              38.21
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              70.34,
+              69.79
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              70.8,
+              69.79
+            ],
+            "tracao_flexao": [
+              8.3,
+              8.1
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              78.33,
+              76.66
+            ],
+            "tracao_flexao": [
+              8.1,
+              8.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              32.1,
+              33.2,
+              37.9
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              38.5,
+              45.3,
+              49.2
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.8,
+              49.1,
+              50.8
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              52.2,
+              49.1,
+              49.3
+            ]
+          }
+        ],
+        "temperatura_max": 52.2
+      },
+      {
+        "page": 15,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02518",
+        "data_producao": "14/01/2026",
+        "lotes_chumbadores": "L - 128 HP7 PANDROL 5058 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063876125"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              37.87,
+              32.42
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              73.76,
+              69.12
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              76.56,
+              69.12
+            ],
+            "tracao_flexao": [
+              8.3,
+              8.6
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              85.28,
+              85.38
+            ],
+            "tracao_flexao": [
+              8.35,
+              8.28
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.8,
+              30.1,
+              34.8
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              35.4,
+              37.5,
+              43.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              46.4,
+              41.2,
+              44.7
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              48.1,
+              42.9,
+              44.3
+            ]
+          }
+        ],
+        "temperatura_max": 48.1
+      },
+      {
+        "page": 16,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02520",
+        "data_producao": "14/01/2026",
+        "lotes_chumbadores": "L - 4347 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063876132"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              41.3,
+              38.1
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              82.34,
+              83.79
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              86.03,
+              83.89
+            ],
+            "tracao_flexao": [
+              8.7,
+              8.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              95.87,
+              89.74
+            ],
+            "tracao_flexao": [
+              9.33,
+              9.3
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.8,
+              28.3,
+              28.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              40.3,
+              34.6,
+              31.8
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.6,
+              51.1,
+              47.4
+            ]
+          },
+          {
+            "hora": "13:00",
+            "leituras": [
+              51.5,
+              51.5,
+              47.3
+            ]
+          }
+        ],
+        "temperatura_max": 51.5
+      },
+      {
+        "page": 17,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02521",
+        "data_producao": "15/01/2026",
+        "lotes_chumbadores": "4276, M-330 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063876134",
+          "1063876106"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              33.3,
+              32.29
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              77.81,
+              77.55
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              72.71,
+              73.64
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.7
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              81.18,
+              77.39
+            ],
+            "tracao_flexao": [
+              8.4,
+              8.6
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              31.9,
+              32.3,
+              35.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              40.8,
+              43.5,
+              47.1
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.9,
+              47.6,
+              48.7
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              50.7,
+              44.1,
+              46.5
+            ]
+          }
+        ],
+        "temperatura_max": 50.7
+      },
+      {
+        "page": 18,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02523",
+        "data_producao": "15/01/2026",
+        "lotes_chumbadores": "4347 PANDROL CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063876103"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              35.46,
+              35.81
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              79.26,
+              76.75
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              79.37,
+              78.58
+            ],
+            "tracao_flexao": [
+              8.8,
+              8.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              86.87,
+              89.74
+            ],
+            "tracao_flexao": [
+              8.9,
+              8.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              36.1,
+              47.0,
+              47.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              47.9,
+              52.0,
+              49.3
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.1,
+              52.1,
+              49.6
+            ]
+          },
+          {
+            "hora": "13:00",
+            "leituras": [
+              48.6,
+              52.2,
+              45.0
+            ]
+          }
+        ],
+        "temperatura_max": 52.2
+      },
+      {
+        "page": 19,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02524",
+        "data_producao": "16/01/2026",
+        "lotes_chumbadores": "4260,4274 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063876102"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              33.07,
+              32.21
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              59.37,
+              64.07
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              70.38,
+              69.17
+            ],
+            "tracao_flexao": [
+              7.6,
+              7.5
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              69.75,
+              70.28
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              31.4,
+              29.0,
+              47.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              43.7,
+              44.0,
+              48.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.5,
+              48.9,
+              48.1
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              50.9,
+              45.9,
+              47.6
+            ]
+          }
+        ],
+        "temperatura_max": 50.9
+      },
+      {
+        "page": 20,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02525",
+        "data_producao": "16/01/2026",
+        "lotes_chumbadores": "L-4274 e L-4260 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063876108"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              39.26,
+              37.44
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              68.09,
+              75.73
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              80.08,
+              78.82
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.6
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              85.09,
+              81.61
+            ],
+            "tracao_flexao": [
+              8.5,
+              7.9
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.8,
+              40.1,
+              39.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              42.4,
+              51.1,
+              49.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              52.3,
+              51.6,
+              50.1
+            ]
+          },
+          {
+            "hora": "23:00",
+            "leituras": [
+              46.1,
+              50.0,
+              48.2
+            ]
+          }
+        ],
+        "temperatura_max": 52.3
+      },
+      {
+        "page": 21,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02526",
+        "data_producao": "17/01/2026",
+        "lotes_chumbadores": "426,5058 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063876107"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              53.47,
+              52.45
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              68.37,
+              68.11
+            ],
+            "tracao_flexao": [
+              8.4,
+              8.7
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              78.12,
+              79.98
+            ],
+            "tracao_flexao": [
+              8.8,
+              9.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              35.1,
+              37.8,
+              40.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              45.3,
+              47.3,
+              49.6
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.1,
+              52.6,
+              51.3
+            ]
+          },
+          {
+            "hora": "22:00",
+            "leituras": [
+              40.0,
+              45.0,
+              48.9
+            ]
+          }
+        ],
+        "temperatura_max": 52.6
+      },
+      {
+        "page": 22,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02527",
+        "data_producao": "19/01/2026",
+        "lotes_chumbadores": "4260, 4276 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063876113"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.7,
+            "compressao_axial": [
+              35.62,
+              35.74
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              58.45,
+              59.14
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              67.27,
+              64.99
+            ],
+            "tracao_flexao": [
+              7.76,
+              7.99
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              81.46,
+              74.69
+            ],
+            "tracao_flexao": [
+              8.1,
+              8.8
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              23.9,
+              32.3,
+              37.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              35.9,
+              37.5,
+              49.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              45.9,
+              40.9,
+              51.7
+            ]
+          },
+          {
+            "hora": "15:00",
+            "leituras": [
+              47.0,
+              45.6,
+              48.1
+            ]
+          }
+        ],
+        "temperatura_max": 51.7
+      },
+      {
+        "page": 23,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02530",
+        "data_producao": "20/01/2026",
+        "lotes_chumbadores": "4260, 4276 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838492",
+          "1063838491"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              35.4,
+              34.37
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              58.82,
+              61.72
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              76.19,
+              72.29
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.3
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              83.44,
+              85.42
+            ],
+            "tracao_flexao": [
+              9.2,
+              8.9
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.3,
+              32.1,
+              36.9
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              37.9,
+              39.6,
+              43.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              51.4,
+              48.3,
+              43.1
+            ]
+          },
+          {
+            "hora": "16:00",
+            "leituras": [
+              51.9,
+              39.6,
+              40.5
+            ]
+          }
+        ],
+        "temperatura_max": 51.9
+      },
+      {
+        "page": 24,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02531",
+        "data_producao": "20/01/2026",
+        "lotes_chumbadores": "4260 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838491",
+          "1063838480"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              38.74,
+              37.36
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              70.52,
+              69.18
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              82.97,
+              74.79
+            ],
+            "tracao_flexao": [
+              8.4,
+              8.1
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              91.84,
+              92.01
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.0,
+              38.1,
+              38.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              35.1,
+              51.1,
+              50.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              47.2,
+              53.2,
+              51.6
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              50.0,
+              51.6,
+              49.4
+            ]
+          }
+        ],
+        "temperatura_max": 53.2
+      },
+      {
+        "page": 25,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02533",
+        "data_producao": "21/01/2026",
+        "lotes_chumbadores": "4260,4276 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838481",
+          "1063838486"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.7,
+            "compressao_axial": [
+              39.06,
+              38.12
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              74.04,
+              74.45
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              76.36,
+              74.45
+            ],
+            "tracao_flexao": [
+              8.0,
+              8.3
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              87.7,
+              88.81
+            ],
+            "tracao_flexao": [
+              8.7,
+              8.8
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              32.4,
+              35.2,
+              36.3
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              45.1,
+              40.3,
+              46.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              52.3,
+              53.0,
+              47.1
+            ]
+          },
+          {
+            "hora": "15:00",
+            "leituras": [
+              46.1,
+              49.1,
+              44.3
+            ]
+          }
+        ],
+        "temperatura_max": 53.0
+      },
+      {
+        "page": 26,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02534",
+        "data_producao": "21/01/2026",
+        "lotes_chumbadores": "4276 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838486"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              33.69,
+              35.92
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              86.76,
+              77.82
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              87.11,
+              90.63
+            ],
+            "tracao_flexao": [
+              8.7,
+              8.9
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              93.53,
+              96.92
+            ],
+            "tracao_flexao": [
+              8.6,
+              9.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              33.1,
+              35.3,
+              42.5
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              41.2,
+              49.9,
+              46.5
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              48.3,
+              52.4,
+              46.4
+            ]
+          },
+          {
+            "hora": "13:00",
+            "leituras": [
+              51.3,
+              50.8,
+              46.2
+            ]
+          }
+        ],
+        "temperatura_max": 52.4
+      },
+      {
+        "page": 27,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02536",
+        "data_producao": "22/01/2025",
+        "lotes_chumbadores": "4276 e 4274 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063838494"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              41.02,
+              37.16
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              78.58,
+              76.26
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              84.17,
+              78.05
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.0
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              88.45,
+              88.9
+            ],
+            "tracao_flexao": [
+              8.4,
+              8.7
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.1,
+              31.8,
+              36.2
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              30.3,
+              43.1,
+              47.2
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              39.6,
+              45.1,
+              48.1
+            ]
+          },
+          {
+            "hora": "15:00",
+            "leituras": [
+              46.7,
+              42.8,
+              47.7
+            ]
+          }
+        ],
+        "temperatura_max": 48.1
+      },
+      {
+        "page": 28,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02537",
+        "data_producao": "22/01/2026",
+        "lotes_chumbadores": "M - 007, M - 008 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063932213"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              39.91,
+              32.49
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              80.44,
+              77.06
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              85.62,
+              87.62
+            ],
+            "tracao_flexao": [
+              8.1,
+              8.6
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              92.68,
+              95.99
+            ],
+            "tracao_flexao": [
+              8.9,
+              9.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.3,
+              29.1,
+              31.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              32.4,
+              40.2,
+              44.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              40.0,
+              48.9,
+              48.0
+            ]
+          },
+          {
+            "hora": "00:00",
+            "leituras": [
+              49.1,
+              50.2,
+              47.5
+            ]
+          }
+        ],
+        "temperatura_max": 50.2
+      },
+      {
+        "page": 29,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02538",
+        "data_producao": "23/01/2026",
+        "lotes_chumbadores": "M-007 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063933215"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.8,
+            "compressao_axial": [
+              40.63,
+              37.51
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              71.9,
+              63.99
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              84.53,
+              83.56
+            ],
+            "tracao_flexao": [
+              7.7,
+              8.0
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              88.96,
+              87.43
+            ],
+            "tracao_flexao": [
+              8.3,
+              8.4
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              49.6,
+              44.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              49.9,
+              44.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              48.9,
+              43.1
+            ]
+          },
+          {
+            "hora": "15:00",
+            "leituras": [
+              44.4,
+              40.7
+            ]
+          }
+        ],
+        "temperatura_max": 49.9
+      },
+      {
+        "page": 30,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02539",
+        "data_producao": "23/01/2026",
+        "lotes_chumbadores": "M-007, 008 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063933952",
+          "1063933299"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              36.46,
+              34.84
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              77.04,
+              74.11
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              92.11,
+              90.47
+            ],
+            "tracao_flexao": [
+              8.0,
+              7.8
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              93.69,
+              95.6
+            ],
+            "tracao_flexao": [
+              8.4,
+              8.7
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              32.8,
+              37.8,
+              43.3
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              46.3,
+              47.1,
+              46.2
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.1,
+              50.2,
+              49.2
+            ]
+          },
+          {
+            "hora": "15:00",
+            "leituras": [
+              46.6,
+              49.1,
+              45.7
+            ]
+          }
+        ],
+        "temperatura_max": 50.2
+      },
+      {
+        "page": 31,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02540",
+        "data_producao": "26/01/2026",
+        "lotes_chumbadores": "M - 007 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063945987",
+          "1063933959",
+          "1063947653"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.7,
+            "compressao_axial": [
+              36.91,
+              39.4
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              58.21,
+              61.14
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              72.73,
+              83.2
+            ],
+            "tracao_flexao": [
+              8.9,
+              8.7
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              86.48,
+              84.19
+            ],
+            "tracao_flexao": [
+              9.1,
+              9.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              35.5,
+              36.8,
+              43.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              49.6,
+              50.1,
+              49.9
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              52.4,
+              52.3,
+              50.6
+            ]
+          },
+          {
+            "hora": "15:00",
+            "leituras": [
+              50.4,
+              52.7,
+              48.1
+            ]
+          }
+        ],
+        "temperatura_max": 52.7
+      },
+      {
+        "page": 32,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02541",
+        "data_producao": "26/01/2026",
+        "lotes_chumbadores": "M - 346 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063933298"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              34.6,
+              29.26
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              52.7,
+              60.74
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              74.78,
+              70.22
+            ],
+            "tracao_flexao": [
+              7.1,
+              8.0
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              86.07,
+              84.58
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              31.8,
+              32.5,
+              39.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              39.4,
+              46.7,
+              51.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.7,
+              50.9,
+              52.6
+            ]
+          },
+          {
+            "hora": "13:00",
+            "leituras": [
+              51.6,
+              50.7,
+              52.1
+            ]
+          }
+        ],
+        "temperatura_max": 52.6
+      },
+      {
+        "page": 33,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02542",
+        "data_producao": "27/01/2026",
+        "lotes_chumbadores": "N - 007 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063945985"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              36.07,
+              39.71
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              59.64,
+              55.42
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              61.67,
+              66.44
+            ],
+            "tracao_flexao": [
+              7.5,
+              7.1
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              68.02,
+              69.11
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              32.9,
+              35.8,
+              38.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              40.9,
+              49.8,
+              50.8
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              52.7,
+              54.1,
+              53.6
+            ]
+          },
+          {
+            "hora": "17:00",
+            "leituras": [
+              54.9,
+              53.3,
+              52.3
+            ]
+          }
+        ],
+        "temperatura_max": 54.9
+      },
+      {
+        "page": 34,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02543",
+        "data_producao": "27/01/2026",
+        "lotes_chumbadores": "N - 007 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063959209"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              29.22,
+              28.11
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              60.46,
+              58.83
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              66.31,
+              73.19
+            ],
+            "tracao_flexao": [
+              8.6,
+              7.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              71.58,
+              73.08
+            ],
+            "tracao_flexao": [
+              8.3,
+              8.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              31.4,
+              34.9,
+              49.9
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              41.9,
+              48.7,
+              55.1
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              51.8,
+              52.1,
+              56.5
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              50.6,
+              47.1,
+              55.6
+            ]
+          }
+        ],
+        "temperatura_max": 56.5
+      },
+      {
+        "page": 35,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02544",
+        "data_producao": "28/01/2026",
+        "lotes_chumbadores": "N-007 - N008 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063932212"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              30.7,
+              31.65
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              66.26,
+              66.8
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              73.31,
+              73.69
+            ],
+            "tracao_flexao": [
+              8.1,
+              8.0
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              89.66,
+              87.2
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.1,
+              44.2,
+              46.9
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              32.5,
+              45.1,
+              48.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              40.0,
+              46.7,
+              48.4
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              43.1,
+              46.8,
+              47.7
+            ]
+          }
+        ],
+        "temperatura_max": 48.7
+      },
+      {
+        "page": 36,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02545",
+        "data_producao": "28/01/2026",
+        "lotes_chumbadores": "N - 001 e N - 007 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063932237"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              31.65,
+              30.78
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              59.88,
+              59.74
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              63.84,
+              64.4
+            ],
+            "tracao_flexao": [
+              7.6,
+              7.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              72.05,
+              72.92
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              27.7,
+              26.4,
+              30.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              33.5,
+              36.1,
+              43.1
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              44.9,
+              41.2,
+              46.9
+            ]
+          },
+          {
+            "hora": "16:00",
+            "leituras": [
+              47.0,
+              43.5,
+              47.0
+            ]
+          }
+        ],
+        "temperatura_max": 47.0
+      },
+      {
+        "page": 37,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02546",
+        "data_producao": "29/01/2026",
+        "lotes_chumbadores": "M - 341 e N - 007 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063945977"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              35.66,
+              34.74
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              64.72,
+              60.11
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              72.77,
+              70.38
+            ],
+            "tracao_flexao": [
+              7.7,
+              7.8
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              79.46,
+              79.07
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.4
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              40.1,
+              43.7,
+              46.8
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              43.8,
+              49.4,
+              50.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.9,
+              50.2,
+              50.8
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              46.3,
+              47.9,
+              47.3
+            ]
+          }
+        ],
+        "temperatura_max": 50.8
+      },
+      {
+        "page": 38,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02547",
+        "data_producao": "29/01/2026",
+        "lotes_chumbadores": "M - 345 e M - 315 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063959203"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              34.34,
+              29.34
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              62.62,
+              63.13
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              76.27,
+              78.22
+            ],
+            "tracao_flexao": [
+              7.6,
+              7.5
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              82.96,
+              81.99
+            ],
+            "tracao_flexao": [
+              7.2,
+              7.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              31.4,
+              32.4,
+              41.8
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              37.1,
+              36.8,
+              53.0
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              41.3,
+              45.0,
+              54.6
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              50.6,
+              52.1,
+              53.1
+            ]
+          }
+        ],
+        "temperatura_max": 54.6
+      },
+      {
+        "page": 39,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02548",
+        "data_producao": "30/01/2026",
+        "lotes_chumbadores": "M - 340 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063947652"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.8,
+            "compressao_axial": [
+              31.0,
+              39.52
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              66.62,
+              74.8
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              70.25,
+              75.42
+            ],
+            "tracao_flexao": [
+              6.5,
+              6.6
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              90.75,
+              85.82
+            ],
+            "tracao_flexao": [
+              8.3,
+              7.7
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              38.4,
+              42.7,
+              42.9
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              41.2,
+              47.1,
+              45.3
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              42.3,
+              47.6,
+              45.6
+            ]
+          },
+          {
+            "hora": "16:00",
+            "leituras": [
+              44.5,
+              45.7,
+              43.3
+            ]
+          }
+        ],
+        "temperatura_max": 47.6
+      },
+      {
+        "page": 40,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02607",
+        "data_producao": "30/01/2026",
+        "lotes_chumbadores": "M - 340 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063947663",
+          "1063945996"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              31.65,
+              30.54
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              47.56,
+              49.03
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              55.97,
+              53.38
+            ],
+            "tracao_flexao": [
+              7.55,
+              6.7
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              62.29,
+              63.48
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              27.1,
+              27.8,
+              28.5
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              31.5,
+              32.9,
+              35.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              39.8,
+              40.6,
+              40.0
+            ]
+          },
+          {
+            "hora": "22:00",
+            "leituras": [
+              34.7,
+              34.9,
+              35.2
+            ]
+          }
+        ],
+        "temperatura_max": 40.6
+      },
+      {
+        "page": 41,
+        "tipo_dormente": "Bitola larga - FMT FC",
+        "lote": "02608",
+        "data_producao": "31/01/2026",
+        "lotes_chumbadores": "M - 344 , N -007 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [
+          "1063945974"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 1.5,
+            "compressao_axial": [
+              43.98,
+              46.66
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              68.72,
+              76.65
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              72.45,
+              70.09
+            ],
+            "tracao_flexao": [
+              7.8,
+              7.5
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              72.74,
+              73.8
+            ],
+            "tracao_flexao": [
+              8.8,
+              8.6
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              40.2,
+              42.5,
+              42.2
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              44.6,
+              46.4,
+              44.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              45.6,
+              46.7,
+              44.6
+            ]
+          },
+          {
+            "hora": "20:00",
+            "leituras": [
+              36.5,
+              36.7,
+              36.2
+            ]
+          }
+        ],
+        "temperatura_max": 46.7
+      }
+    ]
+  },
+  {
+    "arquivo": "002_26 - DB CAVAN SL - RUMO_MISTA MP - JANEIRO(1).pdf",
+    "paginas": 152,
+    "cabecalho": {
+      "fornecedor": "CAVAN Pré Moldado S/A",
+      "cliente": "RUMO",
+      "mes": "JANEIRO DE 2026",
+      "periodo_inicio": "05/01/2026",
+      "periodo_fim": "22/01/2026",
+      "data_book": "002/26",
+      "lotes": [
+        "02345",
+        "02348",
+        "02501",
+        "02503",
+        "02509",
+        "02512",
+        "02515",
+        "02519",
+        "02522",
+        "02529",
+        "02532",
+        "02535"
+      ],
+      "quantidade": 3942,
+      "produto": "Dormente monobloco de concreto protendido para via de Bitola Mista com fixações tipo Pandrol Fastclip FC isoladas e trilhos TR68 (ou 60E1, com uso de componentes especiais) na inclinação 1/40.",
+      "modelo": "VCL/DMB-FXPFC-41C"
+    },
+    "certificados": [
+      {
+        "page": 7,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02345",
+        "data_producao": "05/01/2026",
+        "lotes_chumbadores": "M-340 Ass. Controle de Qualidade",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              34.92,
+              30.8
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              60.3,
+              64.84
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              68.76,
+              71.48
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.8
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              70.92,
+              69.56
+            ],
+            "tracao_flexao": [
+              8.8,
+              8.7
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              34.7,
+              32.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              31.5,
+              35.1
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              46.0,
+              48.5
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              52.0,
+              51.0
+            ]
+          }
+        ],
+        "temperatura_max": 52.0
+      },
+      {
+        "page": 8,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02348",
+        "data_producao": "06/01/2026",
+        "lotes_chumbadores": "M-344 e M-345 Ass. Controle de Qualidade",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              36.97,
+              39.23
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              76.64,
+              71.41
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              80.27,
+              80.75
+            ],
+            "tracao_flexao": [
+              7.2,
+              6.5
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              85.18,
+              79.32
+            ],
+            "tracao_flexao": [
+              9.1,
+              9.8
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              32.2,
+              32.7,
+              32.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              36.0,
+              39.7,
+              44.9
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              51.2,
+              53.6,
+              52.4
+            ]
+          },
+          {
+            "hora": "23:00",
+            "leituras": [
+              56.4,
+              56.7,
+              53.5
+            ]
+          }
+        ],
+        "temperatura_max": 56.7
+      },
+      {
+        "page": 9,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02501",
+        "data_producao": "07/01/2026",
+        "lotes_chumbadores": "M-345 e M-344 Ass. Controle de Qualidade",
+        "bobinas": [
+          "1063838435"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              40.6,
+              32.7
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              63.3,
+              75.3
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              79.2,
+              78.5
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              83.6,
+              85.2
+            ],
+            "tracao_flexao": [
+              9.9,
+              9.5
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              32.0,
+              32.2,
+              31.8
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              35.6,
+              40.7,
+              46.2
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.3,
+              51.4,
+              53.4
+            ]
+          },
+          {
+            "hora": "15:00",
+            "leituras": [
+              57.8,
+              54.9,
+              55.1
+            ]
+          }
+        ],
+        "temperatura_max": 57.8
+      },
+      {
+        "page": 10,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02503",
+        "data_producao": "08/01/2026",
+        "lotes_chumbadores": "M-351 Ass. Controle de Qualidade",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              33.46,
+              32.19
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              77.03,
+              76.15
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              81.7,
+              80.58
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.9
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              80.59,
+              80.04
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.8
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              47.8,
+              45.9,
+              44.3
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              53.9,
+              51.2,
+              49.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              55.9,
+              53.4,
+              52.7
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              56.0,
+              55.7,
+              54.1
+            ]
+          }
+        ],
+        "temperatura_max": 56.0
+      },
+      {
+        "page": 11,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02509",
+        "data_producao": "09/01/2026",
+        "lotes_chumbadores": "M - 279 Ass. Controle de Qualidade",
+        "bobinas": [
+          "1063838419",
+          "1063838439"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.7,
+            "compressao_axial": [
+              41.38,
+              41.03
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              62.64,
+              59.56
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              62.21,
+              66.27
+            ],
+            "tracao_flexao": [
+              7.4,
+              7.5
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              82.86,
+              75.03
+            ],
+            "tracao_flexao": [
+              8.4,
+              8.6
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              46.6,
+              45.1,
+              38.9
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              53.9,
+              49.8,
+              46.2
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              55.0,
+              52.3,
+              51.7
+            ]
+          },
+          {
+            "hora": "23:00",
+            "leituras": [
+              49.4,
+              48.8,
+              47.8
+            ]
+          }
+        ],
+        "temperatura_max": 55.0
+      },
+      {
+        "page": 12,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02512",
+        "data_producao": "12/01/2026",
+        "lotes_chumbadores": "M-351 e M-253 Ass. Controle de Qualidade",
+        "bobinas": [
+          "1063838441"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              36.3,
+              36.37
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              69.1,
+              67.42
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              77.84,
+              79.15
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              89.8,
+              84.06
+            ],
+            "tracao_flexao": [
+              9.4,
+              9.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.4,
+              34.9,
+              32.2
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              30.3,
+              36.1,
+              40.0
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              34.4,
+              53.1,
+              53.8
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              53.3,
+              57.0,
+              55.1
+            ]
+          }
+        ],
+        "temperatura_max": 57.0
+      },
+      {
+        "page": 14,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02515",
+        "data_producao": "13/01/2026",
+        "lotes_chumbadores": "M345-L250 Ass. Controle de Qualidade",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              37.18,
+              34.77
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              75.83,
+              77.83
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              80.41,
+              84.29
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              90.45,
+              91.84
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.8
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.1,
+              30.3,
+              36.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              33.9,
+              39.9,
+              49.9
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.1,
+              50.8,
+              52.9
+            ]
+          },
+          {
+            "hora": "13:00",
+            "leituras": [
+              54.9,
+              53.1,
+              53.3
+            ]
+          }
+        ],
+        "temperatura_max": 54.9
+      },
+      {
+        "page": 15,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02519",
+        "data_producao": "14/01/2026",
+        "lotes_chumbadores": "M-314, M-340 e M-344 Ass. Controle de Qualidade",
+        "bobinas": [
+          "1063878485",
+          "1063876132"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              35.84,
+              33.48
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              75.29,
+              72.06
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              87.26,
+              84.05
+            ],
+            "tracao_flexao": [
+              8.0,
+              8.3
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              86.02,
+              88.86
+            ],
+            "tracao_flexao": [
+              9.56,
+              9.57
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.7,
+              28.6,
+              31.6
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              33.5,
+              33.8,
+              44.9
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.2,
+              46.4,
+              49.1
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              54.2,
+              49.4,
+              50.9
+            ]
+          }
+        ],
+        "temperatura_max": 54.2
+      },
+      {
+        "page": 16,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02522",
+        "data_producao": "15/01/2026",
+        "lotes_chumbadores": "M-330 Ass. Controle de Qualidade",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.8,
+            "compressao_axial": [
+              45.6,
+              44.2
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              67.09,
+              69.37
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              74.74,
+              75.03
+            ],
+            "tracao_flexao": [
+              7.8,
+              9.2
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              78.13,
+              79.38
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.7
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              32.6,
+              33.5,
+              35.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              44.8,
+              46.7,
+              47.8
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              50.6,
+              51.4,
+              49.9
+            ]
+          },
+          {
+            "hora": "16:00",
+            "leituras": [
+              48.3,
+              49.6,
+              47.5
+            ]
+          }
+        ],
+        "temperatura_max": 51.4
+      },
+      {
+        "page": 17,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02529",
+        "data_producao": "19/01/2026",
+        "lotes_chumbadores": "N-008 e M-345 Ass. Controle de Qualidade",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              34.98,
+              31.54
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              73.2,
+              71.17
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              79.2,
+              75.1
+            ],
+            "tracao_flexao": [
+              8.7,
+              8.1
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              88.97,
+              91.0
+            ],
+            "tracao_flexao": [
+              9.0,
+              8.7
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              36.8,
+              35.8,
+              34.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              46.5,
+              48.4,
+              47.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              52.1,
+              50.9,
+              51.4
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              51.9,
+              53.2,
+              52.2
+            ]
+          }
+        ],
+        "temperatura_max": 53.2
+      },
+      {
+        "page": 18,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02532",
+        "data_producao": "20/01/2026",
+        "lotes_chumbadores": "N008 Ass. Controle de Qualidade",
+        "bobinas": [
+          "1063838480",
+          "1063838483"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              37.09,
+              35.81
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              78.26,
+              72.69
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              78.62,
+              83.4
+            ],
+            "tracao_flexao": [
+              8.4,
+              8.5
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              94.94,
+              94.53
+            ],
+            "tracao_flexao": [
+              8.9,
+              8.9
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              28.5,
+              34.3,
+              38.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              34.1,
+              45.2,
+              51.2
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              47.2,
+              49.6,
+              53.3
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              50.8,
+              52.8,
+              54.1
+            ]
+          }
+        ],
+        "temperatura_max": 54.1
+      },
+      {
+        "page": 19,
+        "tipo_dormente": "Bitola mista",
+        "lote": "02535",
+        "data_producao": "22/01/2026",
+        "lotes_chumbadores": "N007 Ass. Controle de Qualidade",
+        "bobinas": [
+          "1063838489",
+          "1063838487"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              42.4,
+              38.76
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              76.26,
+              78.99
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              88.54,
+              87.05
+            ],
+            "tracao_flexao": [
+              8.0,
+              8.0
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              91.28,
+              93.22
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              26.6,
+              29.3,
+              46.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              30.6,
+              40.8,
+              49.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              43.5,
+              45.0,
+              50.2
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              47.9,
+              46.2,
+              47.7
+            ]
+          }
+        ],
+        "temperatura_max": 50.2
+      }
+    ]
+  },
+  {
+    "arquivo": "003_26 - DB CAVAN SL - RUMO_LARGA MP - JANEIRO(1).pdf",
+    "paginas": 83,
+    "cabecalho": {
+      "fornecedor": "CAVAN Pré Moldado S/A",
+      "cliente": "RUMO",
+      "mes": "JANEIRO DE 2026",
+      "periodo_inicio": "05/01/2026",
+      "periodo_fim": "07/01/2026",
+      "data_book": "003/26",
+      "lotes": [
+        "02344",
+        "02347",
+        "02502"
+      ],
+      "quantidade": 954,
+      "produto": "Dormente monobloco de concreto protendido para via de bitola larga com fixações tipo Pandrol Fastclip FC isoladas e trilhos TR68 (ou UIC60, com uso de isoladores especiais) na inclinação 11/40.",
+      "modelo": "VCL/DMB-FXPFC-01C"
+    },
+    "certificados": [
+      {
+        "page": 7,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02344",
+        "data_producao": "05/01/2026",
+        "lotes_chumbadores": "1063694930 1063694990",
+        "bobinas": [
+          "1063694930",
+          "1063694990"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              30.0,
+              28.12
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              64.22,
+              60.26
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              65.6,
+              63.83
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.0
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              66.67,
+              73.64
+            ],
+            "tracao_flexao": [
+              8.7,
+              9.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              31.2,
+              29.4,
+              32.1
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              34.8,
+              38.9,
+              47.3
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              45.9,
+              43.7,
+              49.6
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              46.7,
+              47.1,
+              48.1
+            ]
+          }
+        ],
+        "temperatura_max": 49.6
+      },
+      {
+        "page": 8,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02347",
+        "data_producao": "05/01/2026",
+        "lotes_chumbadores": "M-340 E M-344 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              32.34,
+              32.91
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              65.66,
+              68.57
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              74.66,
+              70.95
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.7
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              81.14,
+              75.8
+            ],
+            "tracao_flexao": [
+              11.2,
+              10.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.4,
+              30.3,
+              29.5
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              35.0,
+              39.1,
+              38.9
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              47.6,
+              48.0,
+              46.5
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              46.5,
+              48.0,
+              45.2
+            ]
+          }
+        ],
+        "temperatura_max": 48.0
+      },
+      {
+        "page": 9,
+        "tipo_dormente": "",
+        "lote": "",
+        "data_producao": "",
+        "lotes_chumbadores": "07/01/2026 M-344",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              36.22,
+              34.79
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              78.69,
+              77.18
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              83.21,
+              84.37
+            ],
+            "tracao_flexao": [
+              8.1,
+              8.2
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              87.9,
+              90.61
+            ],
+            "tracao_flexao": [
+              9.5,
+              9.6
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              28.7,
+              29.3,
+              29.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              31.4,
+              38.4,
+              39.0
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              42.6,
+              46.5,
+              48.0
+            ]
+          },
+          {
+            "hora": "16:00",
+            "leituras": [
+              49.9,
+              43.3,
+              43.4
+            ]
+          }
+        ],
+        "temperatura_max": 49.9
+      }
+    ]
+  },
+  {
+    "arquivo": "004_26 - DB CAVAN SL - RUMO_FERRONORTE - JANEIRO(1).pdf",
+    "paginas": 98,
+    "cabecalho": {
+      "fornecedor": "CAVAN Pré Moldado S/A",
+      "cliente": "RUMO",
+      "mes": "JANEIRO DE 2026",
+      "periodo_inicio": "05/01/2026",
+      "periodo_fim": "31/01/2026",
+      "data_book": "004/26",
+      "lotes": [
+        "02473",
+        "02474",
+        "02475",
+        "02480",
+        "02481",
+        "02482",
+        "02483",
+        "02485",
+        "02487",
+        "02417",
+        "02418",
+        "02419",
+        "02420",
+        "02506"
+      ],
+      "quantidade": 2014,
+      "produto": "Dormente monobloco de concreto protendido para via de bitola larga com fixações tipo Pandrol E-clip, isoladas ou não isoladas, com trilhos TR68 ou UIC60 na inclinação 1/20, com armadura para tonelagem bruta anual de 120 MTBA.",
+      "modelo": "VCL/DMB-FXPAN-18C"
+    },
+    "certificados": [
+      {
+        "page": 7,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02473",
+        "data_producao": "05/01/2026",
+        "lotes_chumbadores": "M-238 e M-236 Modulo de Elasticidade:",
+        "bobinas": [
+          "1063838407"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.7,
+            "compressao_axial": [
+              27.63,
+              25.32
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              64.15,
+              63.79
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              70.98,
+              75.65
+            ],
+            "tracao_flexao": [
+              8.7,
+              8.9
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              73.36,
+              75.45
+            ],
+            "tracao_flexao": [
+              9.2,
+              9.4
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.8
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              21.8
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              41.9
+            ]
+          },
+          {
+            "hora": "17:00",
+            "leituras": [
+              42.2
+            ]
+          }
+        ],
+        "temperatura_max": 42.2
+      },
+      {
+        "page": 8,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02474",
+        "data_producao": "06/01/2026",
+        "lotes_chumbadores": "M-238 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              28.14,
+              26.47
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              69.13,
+              68.1
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              73.71,
+              72.18
+            ],
+            "tracao_flexao": [
+              8.7,
+              7.7
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              75.99,
+              75.0
+            ],
+            "tracao_flexao": [
+              7.7,
+              8.4
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              35.0,
+              38.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              46.8,
+              47.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              49.1,
+              48.9
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              42.6,
+              48.0
+            ]
+          }
+        ],
+        "temperatura_max": 49.1
+      },
+      {
+        "page": 9,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02475",
+        "data_producao": "07/01/2026",
+        "lotes_chumbadores": "M - 234 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              34.73,
+              34.8
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              72.5,
+              76.51
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              75.68,
+              78.13
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.3
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              83.74,
+              83.23
+            ],
+            "tracao_flexao": [
+              10.0,
+              10.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              26.3,
+              27.6
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              32.0,
+              27.9
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              44.7,
+              35.8
+            ]
+          },
+          {
+            "hora": "22:00",
+            "leituras": [
+              32.1,
+              33.6
+            ]
+          }
+        ],
+        "temperatura_max": 44.7
+      },
+      {
+        "page": 10,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02480",
+        "data_producao": "15/01/2026",
+        "lotes_chumbadores": "M-240 Modulo de Elasticidade:",
+        "bobinas": [
+          "1063876105"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              29.8,
+              28.05
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              75.58,
+              79.63
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              79.81,
+              78.82
+            ],
+            "tracao_flexao": [
+              8.0,
+              8.2
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              84.02,
+              86.65
+            ],
+            "tracao_flexao": [
+              8.4,
+              8.8
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              28.6,
+              28.2
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              36.1,
+              30.1
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              44.8,
+              42.3
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              44.9,
+              46.0
+            ]
+          }
+        ],
+        "temperatura_max": 46.0
+      },
+      {
+        "page": 11,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02481",
+        "data_producao": "16/01/2026",
+        "lotes_chumbadores": "M-236 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              32.39,
+              30.37
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              78.47,
+              74.33
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              78.92,
+              80.73
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.4
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              82.38,
+              86.96
+            ],
+            "tracao_flexao": [
+              9.0,
+              8.6
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.4
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              39.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              46.7
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              45.6
+            ]
+          }
+        ],
+        "temperatura_max": 46.7
+      },
+      {
+        "page": 12,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02482",
+        "data_producao": "17/01/2026",
+        "lotes_chumbadores": "M-236 Modulo de Elasticidade:",
+        "bobinas": [
+          "1063876112"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 1.6,
+            "compressao_axial": [
+              42.56,
+              41.64
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              46.52,
+              45.11
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              60.91,
+              69.68
+            ],
+            "tracao_flexao": [
+              8.1,
+              7.9
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              68.46,
+              68.19
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.3
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.5
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              34.1
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              44.2
+            ]
+          },
+          {
+            "hora": "22:00",
+            "leituras": [
+              33.7
+            ]
+          }
+        ],
+        "temperatura_max": 44.2
+      },
+      {
+        "page": 13,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02483",
+        "data_producao": "19/01/2026",
+        "lotes_chumbadores": "M-236 Modulo de Elasticidade:",
+        "bobinas": [
+          "1063838492"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.6,
+            "compressao_axial": [
+              26.58,
+              25.26
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              56.75,
+              62.2
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              68.75,
+              73.46
+            ],
+            "tracao_flexao": [
+              7.6,
+              7.5
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              76.03,
+              81.24
+            ],
+            "tracao_flexao": [
+              9.4,
+              9.5
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              38.4
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              40.5
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              40.1
+            ]
+          }
+        ],
+        "temperatura_max": 40.5
+      },
+      {
+        "page": 14,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02485",
+        "data_producao": "20/01/2026",
+        "lotes_chumbadores": "M - 234 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              29.66,
+              25.6
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              74.98,
+              68.29
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              73.88,
+              81.35
+            ],
+            "tracao_flexao": [
+              8.2,
+              9.1
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              89.9,
+              88.44
+            ],
+            "tracao_flexao": [
+              9.3,
+              9.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.0
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              34.5
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              42.0
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              47.0
+            ]
+          }
+        ],
+        "temperatura_max": 47.0
+      },
+      {
+        "page": 15,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02487",
+        "data_producao": "21/01/2026",
+        "lotes_chumbadores": "M-234 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              29.08,
+              28.05
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              77.72,
+              76.93
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              77.61,
+              74.8
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.3
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              86.13,
+              80.87
+            ],
+            "tracao_flexao": [
+              8.3,
+              8.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              28.2
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              41.5
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              44.6
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              44.2
+            ]
+          }
+        ],
+        "temperatura_max": 44.6
+      },
+      {
+        "page": 16,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02417",
+        "data_producao": "26/01/2026",
+        "lotes_chumbadores": "M-240 e M-234 Modulo de Elasticidade:",
+        "bobinas": [
+          "1063933959",
+          "1063959211"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              28.42,
+              25.84
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              60.95,
+              70.18
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              83.32,
+              78.49
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.7
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              92.08,
+              92.0
+            ],
+            "tracao_flexao": [
+              8.5,
+              8.9
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              26.1,
+              28.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              29.8,
+              36.7
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              42.2,
+              47.7
+            ]
+          },
+          {
+            "hora": "12:00",
+            "leituras": [
+              43.0,
+              48.1
+            ]
+          }
+        ],
+        "temperatura_max": 48.1
+      },
+      {
+        "page": 17,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02418",
+        "data_producao": "27/01/2026",
+        "lotes_chumbadores": "M - 234 CERTIFICADO DE QUALIDADE DO LOTE",
+        "bobinas": [],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              33.81,
+              31.09
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              71.49,
+              67.74
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              81.35,
+              77.87
+            ],
+            "tracao_flexao": [
+              8.6,
+              8.2
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              85.08,
+              82.77
+            ],
+            "tracao_flexao": [
+              9.3,
+              9.1
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              29.8
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              35.3
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              47.1
+            ]
+          },
+          {
+            "hora": "13:00",
+            "leituras": [
+              49.4
+            ]
+          }
+        ],
+        "temperatura_max": 49.4
+      },
+      {
+        "page": 18,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02419",
+        "data_producao": "28/01/2026",
+        "lotes_chumbadores": "M - 332 Modulo de Elasticidade:",
+        "bobinas": [
+          "1063947657",
+          "106394590"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              31.45,
+              31.1
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              69.59,
+              70.15
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              70.3,
+              73.44
+            ],
+            "tracao_flexao": [
+              8.2,
+              8.0
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              81.0,
+              86.08
+            ],
+            "tracao_flexao": [
+              9.6,
+              9.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              24.6,
+              27.6
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              26.6,
+              33.8
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              34.9,
+              45.0
+            ]
+          },
+          {
+            "hora": "13:00",
+            "leituras": [
+              40.9,
+              47.1
+            ]
+          }
+        ],
+        "temperatura_max": 47.1
+      },
+      {
+        "page": 19,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02420",
+        "data_producao": "29/01/2026",
+        "lotes_chumbadores": "M - 332 Modulo de Elasticidade:",
+        "bobinas": [
+          "1063947665",
+          "1063959204"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.5,
+            "compressao_axial": [
+              31.33,
+              30.85
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              64.67,
+              67.02
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              76.68,
+              77.61
+            ],
+            "tracao_flexao": [
+              8.3,
+              7.6
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              81.62,
+              82.82
+            ],
+            "tracao_flexao": [
+              8.7,
+              8.0
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              30.5,
+              28.7
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              36.1,
+              35.9
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              51.4,
+              50.8
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              54.7,
+              55.1
+            ]
+          }
+        ],
+        "temperatura_max": 55.1
+      },
+      {
+        "page": 20,
+        "tipo_dormente": "Bitola larga",
+        "lote": "02506",
+        "data_producao": "30/01/2026",
+        "lotes_chumbadores": "M - 333 Modulo de Elasticidade:",
+        "bobinas": [
+          "1063945996"
+        ],
+        "resistencia_concreto": [
+          {
+            "idade_dias": 0.8,
+            "compressao_axial": [
+              49.09,
+              42.53
+            ]
+          },
+          {
+            "idade_dias": 7.0,
+            "compressao_axial": [
+              65.97,
+              70.62
+            ]
+          },
+          {
+            "idade_dias": 14.0,
+            "compressao_axial": [
+              74.0,
+              69.67
+            ],
+            "tracao_flexao": [
+              7.4,
+              7.7
+            ]
+          },
+          {
+            "idade_dias": 28.0,
+            "compressao_axial": [
+              78.62,
+              77.37
+            ],
+            "tracao_flexao": [
+              9.4,
+              9.2
+            ]
+          }
+        ],
+        "temperaturas": [
+          {
+            "hora": "03:00",
+            "leituras": [
+              28.2,
+              29.3
+            ]
+          },
+          {
+            "hora": "06:00",
+            "leituras": [
+              36.6,
+              37.2
+            ]
+          },
+          {
+            "hora": "10:00",
+            "leituras": [
+              45.1,
+              46.8
+            ]
+          },
+          {
+            "hora": "14:00",
+            "leituras": [
+              43.6,
+              42.9
+            ]
+          }
+        ],
+        "temperatura_max": 46.8
+      }
+    ]
+  }
+]
