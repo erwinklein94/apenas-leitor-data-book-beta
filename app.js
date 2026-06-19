@@ -257,22 +257,47 @@ function parseTemperatures(text) {
 
 function buildChecklist(context) {
   const templateRows = window.DATABOOK_TEMPLATE_ROWS || [];
-  return templateRows.map(row => {
-    const extracted = extractChecklistValue(row, context);
-    return {
-      dataBook: context.header.dataBook || context.fileName,
-      fileName: context.fileName,
-      excelRow: row.excelRow,
-      section: row.section,
-      item: row.item,
-      description: row.description,
-      tool: row.tool,
-      tolerance: row.tolerance,
-      value: extracted.value,
-      status: extracted.status,
-      evidence: extracted.evidence
+  const lotes = resolveChecklistLots(context);
+
+  return lotes.flatMap(lote => {
+    const certificado = (context.certificados || []).find(c => c.lote === lote) || null;
+
+    // O checklist precisa existir para cada lote do Data Book.
+    // Para campos de certificado, usamos somente o certificado daquele lote.
+    // Para documentos gerais de matéria-prima, usamos as evidências do Data Book inteiro,
+    // mas mantendo o resultado separado por lote para exportação e conferência.
+    const lotContext = {
+      ...context,
+      lote,
+      certificado,
+      certificados: certificado ? [certificado] : []
     };
+
+    return templateRows.map(row => {
+      const extracted = extractChecklistValue(row, lotContext);
+      return {
+        dataBook: context.header.dataBook || context.fileName,
+        fileName: context.fileName,
+        lote,
+        excelRow: row.excelRow,
+        section: row.section,
+        item: row.item,
+        description: row.description,
+        tool: row.tool,
+        tolerance: row.tolerance,
+        value: extracted.value,
+        status: extracted.status,
+        evidence: extracted.evidence
+      };
+    });
   });
+}
+
+function resolveChecklistLots(context) {
+  const lotesCapa = context.header?.lotes || [];
+  const lotesCertificados = (context.certificados || []).map(c => c.lote).filter(Boolean);
+  const lotes = unique([...lotesCapa, ...lotesCertificados]);
+  return lotes.length ? lotes : [""];
 }
 
 function extractChecklistValue(row, context) {
@@ -440,7 +465,10 @@ function renderKpis(q = "") {
   const pend = filteredChecklist.filter(r => ["NOK", "NA"].includes(r.status)).length;
   els.totalFiles.textContent = state.databooks.length;
   els.kpiDataBooks.textContent = unique(state.databooks.map(d => d.header?.dataBook || d.fileName)).length;
-  els.kpiLotes.textContent = unique(state.flatLots.map(l => l.lote).filter(Boolean)).length;
+  els.kpiLotes.textContent = unique([
+    ...state.flatLots.map(l => l.lote),
+    ...state.flatChecklist.map(r => r.lote)
+  ].filter(Boolean)).length;
   els.kpiCertificados.textContent = state.flatLots.length;
   els.kpiPendencias.textContent = pend;
 }
@@ -468,6 +496,7 @@ function renderChecklist(q = "") {
   els.checklistPanel.classList.toggle("hidden", state.flatChecklist.length === 0);
   els.checklistBody.innerHTML = rows.map(r => `<tr>
     <td>${escapeHtml(r.dataBook)}</td>
+    <td>${escapeHtml(r.lote || "-")}</td>
     <td>${escapeHtml(r.section)}</td>
     <td>${escapeHtml(r.item)}</td>
     <td>${escapeHtml(r.description)}</td>
@@ -507,6 +536,7 @@ function exportCsv() {
   const rows = state.flatChecklist.map(r => ({
     arquivo: r.fileName,
     data_book: r.dataBook,
+    lote: r.lote,
     linha_excel: r.excelRow,
     secao: r.section,
     item: r.item,
@@ -542,6 +572,7 @@ function exportXlsx() {
   const checklist = state.flatChecklist.map(r => ({
     arquivo: r.fileName,
     data_book: r.dataBook,
+    lote: r.lote,
     linha_excel: r.excelRow,
     secao: r.section,
     item: r.item,

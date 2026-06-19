@@ -23,7 +23,7 @@ Site estático preparado para rodar no **GitHub Pages**. Ele lê Data Books em P
 2. Clique em **Escolher PDFs** e selecione um ou mais Data Books.
 3. Confira:
    - resumo do Data Book;
-   - checklist documental;
+   - checklist documental separado por lote;
    - certificados por lote.
 4. Exporte em **JSON**, **CSV** ou **XLSX**.
 
@@ -36,8 +36,6 @@ app.js
 .nojekyll
 assets/
   template-fields.js
-samples/
-  resultado-extracao-anexos.json
 README.md
 ```
 
@@ -45,7 +43,13 @@ README.md
 
 - Cabeçalho do Data Book: cliente, mês, período, número do Data Book, modelo, produto, quantidade e lotes da capa.
 - Certificados por lote: lote, data de produção, tipo de dormente, chumbadores, bobinas, notas fiscais, módulos, resistências, temperaturas e página.
-- Checklist documental do Excel: usa os campos da aba `DOCUMENTAL`, com valores obtidos e status automático quando houver regra clara.
+- Checklist documental do Excel: usa os campos da aba `DOCUMENTAL`, gerando uma linha para cada item **em cada lote contido no Data Book**, com valores obtidos e status automático quando houver regra clara.
+
+## Ajuste importante desta versão
+
+O checklist documental não é mais consolidado apenas por Data Book. Agora ele é duplicado e identificado por **lote**, ou seja: se um Data Book tiver 37 lotes e o Excel tiver 65 itens documentais, o exportador gera 37 × 65 linhas no checklist.
+
+Para itens ligados ao certificado do lote, o sistema usa os dados daquele lote específico. Para documentos gerais de matéria-prima, a evidência localizada no Data Book é vinculada individualmente a cada lote para permitir conferência e rastreabilidade.
 
 ## Importante
 
