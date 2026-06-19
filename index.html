@@ -44,6 +44,28 @@
       <article class="kpi"><span id="kpiPendencias">0</span><small>Itens NOK/NA</small></article>
     </section>
 
+
+
+    <section class="panel hidden" id="lotSelectorPanel">
+      <div class="section-head lot-selector-head">
+        <div>
+          <h2>Escolha o lote para visualizar</h2>
+          <p class="muted" id="lotSelectorHelp">Depois da leitura, selecione um lote. O checklist e os certificados abaixo mostrarão somente esse lote.</p>
+        </div>
+        <div class="selector-box">
+          <label for="lotSelect">Lote do Data Book</label>
+          <select id="lotSelect">
+            <option value="">Selecione um lote...</option>
+          </select>
+        </div>
+      </div>
+      <div class="lot-hint">
+        <strong>Lotes encontrados:</strong>
+        <span id="lotCountText">0 lotes identificados.</span>
+      </div>
+      <div class="lot-chips" id="lotChips"></div>
+    </section>
+
     <section class="panel hidden" id="summaryPanel">
       <div class="section-head">
         <h2>Resumo dos Data Books</h2>

@@ -8,7 +8,8 @@
 const state = {
   databooks: [],
   flatChecklist: [],
-  flatLots: []
+  flatLots: [],
+  selectedLotKey: ""
 };
 
 if (window.pdfjsLib) {
@@ -32,6 +33,11 @@ const els = {
   summaryPanel: document.getElementById("summaryPanel"),
   checklistPanel: document.getElementById("checklistPanel"),
   lotsPanel: document.getElementById("lotsPanel"),
+  lotSelectorPanel: document.getElementById("lotSelectorPanel"),
+  lotSelect: document.getElementById("lotSelect"),
+  lotChips: document.getElementById("lotChips"),
+  lotCountText: document.getElementById("lotCountText"),
+  lotSelectorHelp: document.getElementById("lotSelectorHelp"),
   summaryBody: document.querySelector("#summaryTable tbody"),
   checklistBody: document.querySelector("#checklistTable tbody"),
   lotsBody: document.querySelector("#lotsTable tbody"),
@@ -45,6 +51,10 @@ els.exportJsonBtn.addEventListener("click", exportJson);
 els.exportCsvBtn.addEventListener("click", exportCsv);
 els.exportXlsxBtn.addEventListener("click", exportXlsx);
 els.searchInput.addEventListener("input", renderAll);
+els.lotSelect.addEventListener("change", () => {
+  state.selectedLotKey = els.lotSelect.value;
+  renderAll();
+});
 
 ["dragenter", "dragover"].forEach(evt => {
   els.dropzone.addEventListener(evt, e => {
@@ -94,10 +104,11 @@ async function handleFiles(files) {
 
   state.databooks.push(...results);
   rebuildFlatData();
+  validateSelectedLot();
   renderAll();
   toggleExports(state.databooks.length > 0);
   const ok = results.filter(r => !r.error).length;
-  setStatus(`<strong>${ok}</strong> PDF(s) lido(s). Confira as tabelas antes de exportar.`);
+  setStatus(`<strong>${ok}</strong> PDF(s) lido(s). Escolha um lote na caixa de seleção para visualizar o checklist e os certificados sem deixar a página enorme.`);
 }
 
 async function readPdf(file) {
@@ -455,9 +466,100 @@ function rebuildFlatData() {
 function renderAll() {
   const q = (els.searchInput.value || "").trim().toLowerCase();
   renderKpis(q);
+  renderLotSelector();
   renderSummary(q);
   renderChecklist(q);
   renderLots(q);
+}
+
+
+function renderLotSelector() {
+  const options = getLotOptions();
+  els.lotSelectorPanel.classList.toggle("hidden", options.length === 0);
+
+  validateSelectedLot(options);
+  if (!state.selectedLotKey && options.length === 1) state.selectedLotKey = options[0].key;
+
+  const grouped = groupBy(options, opt => opt.dataBook || opt.fileName || "Data Book");
+  const placeholder = `<option value="">Selecione um lote...</option>`;
+  const optionHtml = Object.entries(grouped).map(([group, opts]) => {
+    const inner = opts.map(opt => `<option value="${escapeHtml(opt.key)}">${escapeHtml(opt.label)}</option>`).join("");
+    return `<optgroup label="${escapeHtml(group)}">${inner}</optgroup>`;
+  }).join("");
+  els.lotSelect.innerHTML = placeholder + optionHtml;
+  els.lotSelect.value = state.selectedLotKey;
+
+  els.lotCountText.textContent = `${options.length} lote(s) identificados. Use a lista abaixo como referência rápida.`;
+  els.lotSelectorHelp.textContent = state.selectedLotKey
+    ? `Mostrando somente: ${getLotOptions().find(o => o.key === state.selectedLotKey)?.label || "lote selecionado"}.`
+    : "Depois da leitura, selecione um lote. O checklist e os certificados abaixo mostrarão somente esse lote.";
+
+  els.lotChips.innerHTML = options.map(opt => {
+    const active = opt.key === state.selectedLotKey ? " active" : "";
+    return `<button type="button" class="lot-chip${active}" data-key="${escapeHtml(opt.key)}" title="${escapeHtml(opt.label)}">${escapeHtml(opt.chip)}</button>`;
+  }).join("");
+
+  els.lotChips.querySelectorAll(".lot-chip").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.selectedLotKey = btn.dataset.key || "";
+      renderAll();
+    });
+  });
+}
+
+function getLotOptions() {
+  const options = [];
+  state.databooks.forEach(db => {
+    const lotes = resolveChecklistLots({ header: db.header || {}, certificados: db.certificados || [] });
+    lotes.forEach(lote => {
+      if (!lote) return;
+      const cert = (db.certificados || []).find(c => c.lote === lote) || {};
+      const dataBook = db.header?.dataBook || db.fileName;
+      const tipo = cert.tipoDormente || db.header?.modelo || "";
+      const data = cert.dataProducao || "";
+      const key = makeLotKey(db.fileName, lote);
+      options.push({
+        key,
+        fileName: db.fileName,
+        dataBook,
+        lote,
+        label: `${dataBook} • Lote ${lote}${tipo ? ` • ${tipo}` : ""}${data ? ` • ${data}` : ""}`,
+        chip: `${dataBook} / ${lote}`
+      });
+    });
+  });
+  return options;
+}
+
+function getSelectedLot() {
+  const options = getLotOptions();
+  return options.find(opt => opt.key === state.selectedLotKey) || null;
+}
+
+function validateSelectedLot(options = getLotOptions()) {
+  if (state.selectedLotKey && !options.some(opt => opt.key === state.selectedLotKey)) {
+    state.selectedLotKey = "";
+  }
+}
+
+function getSelectedRows(rows, q = "") {
+  const selected = getSelectedLot();
+  if (!selected) return [];
+  const filtered = rows.filter(row => row.fileName === selected.fileName && row.lote === selected.lote);
+  return filterRows(filtered, q);
+}
+
+function makeLotKey(fileName, lote) {
+  return `${fileName}||${lote}`;
+}
+
+function groupBy(arr, getKey) {
+  return arr.reduce((acc, item) => {
+    const key = getKey(item);
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(item);
+    return acc;
+  }, {});
 }
 
 function renderKpis(q = "") {
@@ -492,8 +594,8 @@ function renderSummary(q = "") {
 }
 
 function renderChecklist(q = "") {
-  const rows = filterRows(state.flatChecklist, q);
-  els.checklistPanel.classList.toggle("hidden", state.flatChecklist.length === 0);
+  const rows = getSelectedRows(state.flatChecklist, q);
+  els.checklistPanel.classList.toggle("hidden", state.flatChecklist.length === 0 || !state.selectedLotKey);
   els.checklistBody.innerHTML = rows.map(r => `<tr>
     <td>${escapeHtml(r.dataBook)}</td>
     <td>${escapeHtml(r.lote || "-")}</td>
@@ -508,8 +610,8 @@ function renderChecklist(q = "") {
 }
 
 function renderLots(q = "") {
-  const rows = filterRows(state.flatLots, q);
-  els.lotsPanel.classList.toggle("hidden", state.flatLots.length === 0);
+  const rows = getSelectedRows(state.flatLots, q);
+  els.lotsPanel.classList.toggle("hidden", state.flatLots.length === 0 || !state.selectedLotKey);
   els.lotsBody.innerHTML = rows.map(r => {
     const c28 = valuesAtDay(r, 28, "compressaoAxial");
     const t28 = valuesAtDay(r, 28, "tracaoFlexao");
@@ -614,6 +716,7 @@ function clearAll() {
   state.databooks = [];
   state.flatChecklist = [];
   state.flatLots = [];
+  state.selectedLotKey = "";
   els.input.value = "";
   els.searchInput.value = "";
   renderAll();

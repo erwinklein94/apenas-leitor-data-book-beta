@@ -21,11 +21,24 @@ Site estático preparado para rodar no **GitHub Pages**. Ele lê Data Books em P
 
 1. Abra o site publicado ou abra o `index.html` no navegador.
 2. Clique em **Escolher PDFs** e selecione um ou mais Data Books.
-3. Confira:
-   - resumo do Data Book;
-   - checklist documental separado por lote;
-   - certificados por lote.
-4. Exporte em **JSON**, **CSV** ou **XLSX**.
+3. Depois da leitura, use a caixa **Lote do Data Book** para escolher qual lote deseja analisar.
+4. Use também os botões/chips de lotes abaixo da caixa de seleção. Eles servem como referência rápida para o usuário saber quais lotes existem naquele Data Book.
+5. O site passa a mostrar somente:
+   - checklist documental do lote escolhido;
+   - certificado do lote escolhido.
+6. Exporte em **JSON**, **CSV** ou **XLSX**.
+
+## Ajuste de visualização por lote
+
+Para a página não ficar enorme após inserir um Data Book, o checklist e a tabela de certificados não aparecem todos de uma vez. Primeiro o usuário escolhe um lote na caixa de seleção.
+
+A lista de lotes é montada automaticamente com base nos lotes encontrados na capa e nos certificados do PDF. Quando houver mais de um Data Book carregado, a seleção mostra o número do Data Book junto com o lote, por exemplo:
+
+```text
+001/26 • Lote 02349 • Bitola larga - FMT FC • 07/01/2026
+```
+
+Assim o usuário consegue escolher com segurança o lote correto, mesmo se houver vários PDFs carregados ao mesmo tempo.
 
 ## Estrutura dos arquivos
 
@@ -39,17 +52,15 @@ assets/
 README.md
 ```
 
-## O que esta primeira versão extrai automaticamente
+## O que esta versão extrai automaticamente
 
 - Cabeçalho do Data Book: cliente, mês, período, número do Data Book, modelo, produto, quantidade e lotes da capa.
 - Certificados por lote: lote, data de produção, tipo de dormente, chumbadores, bobinas, notas fiscais, módulos, resistências, temperaturas e página.
 - Checklist documental do Excel: usa os campos da aba `DOCUMENTAL`, gerando uma linha para cada item **em cada lote contido no Data Book**, com valores obtidos e status automático quando houver regra clara.
 
-## Ajuste importante desta versão
+## Exportação
 
-O checklist documental não é mais consolidado apenas por Data Book. Agora ele é duplicado e identificado por **lote**, ou seja: se um Data Book tiver 37 lotes e o Excel tiver 65 itens documentais, o exportador gera 37 × 65 linhas no checklist.
-
-Para itens ligados ao certificado do lote, o sistema usa os dados daquele lote específico. Para documentos gerais de matéria-prima, a evidência localizada no Data Book é vinculada individualmente a cada lote para permitir conferência e rastreabilidade.
+A visualização da página é filtrada por lote para facilitar a conferência. A exportação continua levando todos os lotes extraídos, com a coluna `lote`, para permitir análise completa no Excel ou futura integração com outro sistema.
 
 ## Importante
 
