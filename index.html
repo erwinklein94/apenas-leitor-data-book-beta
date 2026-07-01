@@ -91,6 +91,10 @@
     </section>
 
     <section class="panel hidden" id="checklistPanel">
+      <div class="checklist-filter-bar">
+        <button id="nokFilterBtn" type="button" class="secondary filter-nok">NOK</button>
+        <span class="muted" id="nokFilterInfo">Mostrando todos os itens do lote selecionado.</span>
+      </div>
       <div class="section-head">
         <div>
           <h2>Checklist documental extraído</h2>
@@ -143,9 +147,6 @@
     </section>
   </main>
 
-  <footer>
-    <strong>Versão pronta para GitHub Pages.</strong> Os campos são baseados na aba DOCUMENTAL do Excel enviado e no padrão dos PDFs CAVAN anexados.
-  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>

@@ -9,7 +9,8 @@ const state = {
   databooks: [],
   flatChecklist: [],
   flatLots: [],
-  selectedLotKey: ""
+  selectedLotKey: "",
+  showOnlyNok: false
 };
 
 if (window.pdfjsLib) {
@@ -38,6 +39,8 @@ const els = {
   lotChips: document.getElementById("lotChips"),
   lotCountText: document.getElementById("lotCountText"),
   lotSelectorHelp: document.getElementById("lotSelectorHelp"),
+  nokFilterBtn: document.getElementById("nokFilterBtn"),
+  nokFilterInfo: document.getElementById("nokFilterInfo"),
   summaryBody: document.querySelector("#summaryTable tbody"),
   checklistBody: document.querySelector("#checklistTable tbody"),
   lotsBody: document.querySelector("#lotsTable tbody"),
@@ -53,6 +56,11 @@ els.exportXlsxBtn.addEventListener("click", exportXlsx);
 els.searchInput.addEventListener("input", renderAll);
 els.lotSelect.addEventListener("change", () => {
   state.selectedLotKey = els.lotSelect.value;
+  state.showOnlyNok = false;
+  renderAll();
+});
+els.nokFilterBtn.addEventListener("click", () => {
+  state.showOnlyNok = !state.showOnlyNok;
   renderAll();
 });
 
@@ -502,6 +510,7 @@ function renderLotSelector() {
   els.lotChips.querySelectorAll(".lot-chip").forEach(btn => {
     btn.addEventListener("click", () => {
       state.selectedLotKey = btn.dataset.key || "";
+      state.showOnlyNok = false;
       renderAll();
     });
   });
@@ -594,9 +603,19 @@ function renderSummary(q = "") {
 }
 
 function renderChecklist(q = "") {
-  const rows = getSelectedRows(state.flatChecklist, q);
-  els.checklistPanel.classList.toggle("hidden", state.flatChecklist.length === 0 || !state.selectedLotKey);
-  els.checklistBody.innerHTML = rows.map(r => `<tr>
+  const selectedRows = getSelectedRows(state.flatChecklist, q);
+  const nokRows = selectedRows.filter(r => String(r.status || "").toUpperCase() === "NOK");
+  const rows = state.showOnlyNok ? nokRows : selectedRows;
+  const panelHidden = state.flatChecklist.length === 0 || !state.selectedLotKey;
+
+  els.checklistPanel.classList.toggle("hidden", panelHidden);
+  els.nokFilterBtn.classList.toggle("active", state.showOnlyNok);
+  els.nokFilterBtn.disabled = panelHidden;
+  els.nokFilterInfo.textContent = state.showOnlyNok
+    ? `Mostrando apenas ${nokRows.length} item(ns) NOK do lote selecionado.`
+    : `Mostrando todos os ${selectedRows.length} item(ns) do lote selecionado. ${nokRows.length} item(ns) NOK encontrado(s).`;
+
+  els.checklistBody.innerHTML = rows.length ? rows.map(r => `<tr>
     <td>${escapeHtml(r.dataBook)}</td>
     <td>${escapeHtml(r.lote || "-")}</td>
     <td>${escapeHtml(r.section)}</td>
@@ -606,7 +625,7 @@ function renderChecklist(q = "") {
     <td>${escapeHtml(r.value || "-")}</td>
     <td>${statusBadge(r.status)}</td>
     <td class="evidence">${escapeHtml(r.evidence || "-")}</td>
-  </tr>`).join("");
+  </tr>`).join("") : `<tr><td colspan="9" class="empty-state">Nenhum item NOK encontrado para este lote.</td></tr>`;
 }
 
 function renderLots(q = "") {
@@ -717,6 +736,7 @@ function clearAll() {
   state.flatChecklist = [];
   state.flatLots = [];
   state.selectedLotKey = "";
+  state.showOnlyNok = false;
   els.input.value = "";
   els.searchInput.value = "";
   renderAll();

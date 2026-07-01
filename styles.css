@@ -173,6 +173,32 @@ button:disabled { opacity: .45; cursor: not-allowed; }
   color: #fff;
 }
 .muted { margin: 6px 0 0; color: var(--muted); }
+.checklist-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.filter-nok {
+  min-width: 82px;
+  border-color: #fda29b;
+  color: var(--danger);
+  background: #fff;
+}
+.filter-nok:hover,
+.filter-nok.active {
+  background: #fef3f2;
+  border-color: var(--danger);
+  color: var(--danger);
+}
+.empty-state {
+  text-align: center;
+  color: var(--muted);
+  font-weight: 800;
+  padding: 24px 12px;
+}
+
 .table-wrap { overflow: auto; border: 1px solid var(--line); border-radius: 16px; }
 .table-wrap.tall { max-height: 620px; }
 table { width: 100%; border-collapse: collapse; min-width: 980px; }
