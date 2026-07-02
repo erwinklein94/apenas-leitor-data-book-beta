@@ -34,9 +34,9 @@ window.DATABOOK_TEMPLATE_ROWS = [
     "excelRow": 15,
     "section": "2 - DOCUMENTAL AGREGADO MIÚDO",
     "item": "1.",
-    "description": "Determinação do material mais fino que passa na peneira 75 μm (%)",
+    "description": "Módulo de finura (Determinação do material mais fino que passa na peneira 75 μm (%))",
     "tool": "",
-    "tolerance": "≥ 0,7% à ≤ 3,0 %",
+    "tolerance": "≥ 0,7 à ≤ 3,0",
     "defaultStatus": "NA"
   },
   {
@@ -184,7 +184,7 @@ window.DATABOOK_TEMPLATE_ROWS = [
     "excelRow": 31,
     "section": "3 - DOCUMENTAL AGREGADO GRAÚDO",
     "item": "1.",
-    "description": "Determinação do material mais fino que passa na peneira 75 μm (%)",
+    "description": "Módulo de finura (Determinação do material mais fino que passa na peneira 75 μm (%))",
     "tool": "",
     "tolerance": "≤ 1,0% - 7,0",
     "defaultStatus": "NA"
