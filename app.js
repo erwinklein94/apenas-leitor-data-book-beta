@@ -446,20 +446,56 @@ function findDocumentaryEvidence(row, pages) {
   let best = null;
   for (const page of pages) {
     const pageNorm = normalizeForSearch(page.text);
-    let hits = 0;
-    for (const kw of uniqueKeywords) if (pageNorm.includes(kw)) hits++;
-    if (hits >= Math.min(2, uniqueKeywords.length)) {
-      const excerpt = excerptAround(page.text, uniqueKeywords[0]) || clean(page.text).slice(0, 260);
-      best = { page: page.page, hits, excerpt };
+    const matched = uniqueKeywords.filter(kw => pageNorm.includes(kw));
+    if (matched.length >= Math.min(2, uniqueKeywords.length)) {
+      const excerpt = excerptAround(page.text, matched[0]) || clean(page.text).slice(0, 260);
+      best = { page: page.page, hits: matched.length, matched, pageText: page.text, excerpt };
       break;
     }
   }
   if (!best) return null;
+
+  // Tenta extrair o valor real que aparece no PDF perto de algum termo compatível.
+  let value = "";
+  for (const kw of best.matched) {
+    const extracted = extractMeasuredValue(best.pageText, kw);
+    if (extracted) { value = extracted; break; }
+  }
+  // Sem número claro? Mostra o trecho real localizado no PDF (e não uma mensagem genérica).
+  if (!value) value = clean(best.excerpt).slice(0, 160);
+
   return {
     page: best.page,
-    value: `Evidência localizada (${best.hits} termo(s) compatíveis)`,
+    value,
     excerpt: best.excerpt
   };
+}
+
+// Extrai o valor medido (número + unidade) que aparece no PDF próximo ao termo localizado.
+function extractMeasuredValue(text, keyword) {
+  const plain = clean(text);
+  const kwNorm = normalizeForSearch(keyword);
+  const idx = normalizeForSearch(plain).indexOf(kwNorm);
+  if (idx < 0) return "";
+  const window = plain.slice(Math.max(0, idx - 25), idx + kwNorm.length + 150)
+    // remove referências normativas para não confundir com valores medidos
+    .replace(/NBR\s*\d+(?:[-/.]\d+)*/gi, " ")
+    .replace(/ISO\s*\d+/gi, " ")
+    .replace(/ASTM\s*[A-Z]?-?\d+/gi, " ")
+    .replace(/#\s*\d+/g, " ")
+    .replace(/n[ºo°]\.?\s*\d+/gi, " ");
+  const unitRe = /(-?\d{1,3}(?:\.\d{3})*,\d+|-?\d+(?:,\d+)?|-?\d+(?:\.\d+)?)\s*(%|MPa|mm|μm|µm|cm|kg\/dm³|kg\/m³|g\/cm³|[ºo°]\s?C)/gi;
+  const vals = [];
+  let m;
+  while ((m = unitRe.exec(window)) !== null) {
+    const num = m[1].trim();
+    const unit = (m[2] || "").replace(/\s+/g, "");
+    // ignora a própria abertura da peneira (ex.: "75 μm"), que é referência e não valor medido
+    if (/μm|µm/i.test(unit) && /(^|\D)0*75$/.test(num)) continue;
+    vals.push(unit ? `${num} ${unit}` : num);
+    if (vals.length >= 4) break;
+  }
+  return unique(vals).join(" · ");
 }
 
 function rebuildFlatData() {
