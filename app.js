@@ -129,9 +129,28 @@ async function readPdf(file) {
     const content = await page.getTextContent();
     const items = content.items || [];
     const text = items.map(item => item.str).join("\n");
-    pages.push({ page: pageNumber, text });
+    const lines = reconstructLines(items);
+    pages.push({ page: pageNumber, text, lines });
   }
   return pages;
+}
+
+// Reconstrói as linhas visuais da página agrupando os fragmentos por coordenada Y,
+// para que o rótulo do ensaio e o valor medido fiquem na mesma linha.
+function reconstructLines(items) {
+  const rows = [];
+  for (const it of items || []) {
+    if (!it.str || !it.str.trim()) continue;
+    const y = it.transform[5];
+    const x = it.transform[4];
+    let bucket = rows.find(r => Math.abs(r.y - y) <= 3);
+    if (!bucket) { bucket = { y, cells: [] }; rows.push(bucket); }
+    bucket.cells.push({ x, s: it.str });
+  }
+  return rows
+    .sort((a, b) => b.y - a.y)
+    .map(r => clean(r.cells.sort((a, b) => a.x - b.x).map(c => c.s).join(" ")))
+    .filter(Boolean);
 }
 
 function parseDataBook(fileName, pages) {
@@ -388,114 +407,102 @@ function extractChecklistValue(row, context) {
     };
   }
 
-  const evidence = findDocumentaryEvidence(row, context.pages);
-  if (evidence) {
+  const doc = findDocumentaryValue(row, context.pages);
+  if (doc) {
     return {
-      value: evidence.value,
+      value: doc.value,
       status: "OK",
-      evidence: `Pág. ${evidence.page}: ${evidence.excerpt}`
+      evidence: `Pág. ${doc.page}: ${doc.excerpt}`
     };
   }
 
   return {
-    value: "Não encontrado automaticamente",
+    value: "—",
     status: "NA",
-    evidence: "Campo mantido para conferência manual ou para inclusão de novo padrão de extração."
+    evidence: "Valor numérico não localizado automaticamente. Conferir manualmente no PDF."
   };
 }
 
-function findDocumentaryEvidence(row, pages) {
-  const section = row.section.toLowerCase();
-  const desc = row.description.toLowerCase();
-  const keywords = [];
+// Marca cada página com o contexto do laudo (miúdo / graúdo / cimento), herdado da capa mais recente.
+function detectReportContext(pages) {
+  const map = new Map();
+  let current = null;
+  for (const pg of pages) {
+    const n = normalizeForSearch(pg.text || (pg.lines || []).join(" "));
+    if (/caracterizacao quimica|cimento portland de alta|perda ao fogo - pf/.test(n)) current = "cimento";
+    else if (/caracterizacao de agregado miudo|agregado miudo para concreto/.test(n)) current = "miudo";
+    else if (/caracterizacao de agregado graudo|agregado graudo para concreto/.test(n)) current = "graudo";
+    map.set(pg.page, current);
+  }
+  return map;
+}
 
-  if (section.includes("agregado miúdo")) keywords.push("agregado miúdo", "agregado miudo", "areia", "miúdo");
-  if (section.includes("agregado graúdo")) keywords.push("agregado graúdo", "agregado graudo", "brita", "graúdo");
-  if (section.includes("cimento")) keywords.push("cimento", "boletim de ensaios", "cp v", "ensaios físicos", "ensaios quimicos");
-  if (section.includes("concreto")) keywords.push("concreto", "aditivo", "metacaulim", "sílica", "agua", "água");
+// Rótulo do ensaio (âncora) + laudo em que o valor aparece, por linha do checklist.
+function rowValueAnchors(row) {
+  const M = {
+    R15: { ctx: "miudo", anchors: [/material fino que passa/i] },
+    R17: { ctx: "miudo", anchors: [/^seca\b/i] },
+    R18: { ctx: "miudo", anchors: [/saturada seca/i] },
+    R19: { ctx: "miudo", anchors: [/^absor/i] },
+    R23: { ctx: "miudo", anchors: [/estado solto/i] },
+    R24: { ctx: "miudo", anchors: [/estado compactado/i] },
+    R28: { ctx: "miudo", anchors: [/argila/i] },
 
-  if (desc.includes("peneira 75")) keywords.push("75 μm", "75 um", "material mais fino", "peneira 75");
-  if (desc.includes("massa especifica") || desc.includes("massa específica")) keywords.push("massa específica", "massa especifica");
-  if (desc.includes("densidade")) keywords.push("densidade", "absorção", "absorcao");
-  if (desc.includes("absorção")) keywords.push("absorção", "absorcao");
-  if (desc.includes("volume de vazios")) keywords.push("volume de vazios", "índice de vazios", "indice de vazios");
-  if (desc.includes("massa unitária")) keywords.push("massa unitária", "massa unitaria");
-  if (desc.includes("argila")) keywords.push("argila em torrões", "materiais friáveis", "materiais friaveis");
-  if (desc.includes("impurezas")) keywords.push("impurezas orgânicas", "impurezas organicas");
-  if (desc.includes("índice de forma")) keywords.push("índice de forma", "indice de forma", "paquímetro", "paquimetro");
-  if (desc.includes("los angeles")) keywords.push("Los Angeles", "abrasão", "abrasao");
-  if (desc.includes("perda ao fogo")) keywords.push("perda ao fogo", "PF 950");
-  if (desc.includes("trióxido") || desc.includes("so3")) keywords.push("SO3", "trióxido de enxofre", "trioxido de enxofre");
-  if (desc.includes("resíduo insolúvel")) keywords.push("resíduo insolúvel", "residuo insolúvel", "residuo insoluvel");
-  if (desc.includes("magnésio") || desc.includes("mgo")) keywords.push("MgO", "óxido magnésio", "oxido magnesio");
-  if (desc.includes("cálcio livre") || desc.includes("cao")) keywords.push("CaO", "cálcio livre", "calcio livre");
-  if (desc.includes("co2")) keywords.push("CO2", "anidrido carbônico", "anidrido carbonico");
-  if (desc.includes("finura")) keywords.push("finura", "NBR 11579", "# 200");
-  if (desc.includes("tempo de pega")) keywords.push("tempo de pega", "NBR 16607");
-  if (desc.includes("aditivo")) keywords.push("aditivo", "certificado de análise de aditivo", "certificado de analise de aditivo");
-  if (desc.includes("minerais")) keywords.push("metacaulim", "sílica", "silica", "adição mineral", "adicao mineral");
-  if (desc.includes("abatimento")) keywords.push("abatimento", "slump", "cone");
-  if (desc.includes("reatividade")) keywords.push("reatividade álcali", "reatividade alcali", "NBR 15577", "expansão em barras", "expansao em barras", "petrográfica", "petrografica");
-  if (desc.includes("def")) keywords.push("DEF", "formação a DEF", "formacao a DEF");
-  if (desc.includes("água") || desc.includes("agua")) keywords.push("água destinada", "agua destinada", "preparação de concreto", "preparacao de concreto");
-  if (desc.includes("validade")) keywords.push("validade");
+    R31: { ctx: "graudo", anchors: [/material fino que passa/i] },
+    R33: { ctx: "graudo", anchors: [/^seca\b/i] },
+    R34: { ctx: "graudo", anchors: [/saturada seca/i] },
+    R35: { ctx: "graudo", anchors: [/^absor/i] },
+    R39: { ctx: "graudo", anchors: [/estado solto/i] },
+    R40: { ctx: "graudo", anchors: [/estado compactado/i] },
+    R48: { ctx: "graudo", anchors: [/los angeles/i] },
 
-  const uniqueKeywords = unique(keywords.map(k => normalizeForSearch(k)).filter(Boolean));
-  if (!uniqueKeywords.length) return null;
+    R54: { ctx: "cimento", anchors: [/perda ao fogo/i] },
+    R55: { ctx: "cimento", anchors: [/anidrido sulf/i] },
+    R56: { ctx: "cimento", anchors: [/-\s*ri\b|insol[uú]vel/i] },
+    R57: { ctx: "cimento", anchors: [/\bmgo\b|magn[eé]sio/i] },
+    R58: { ctx: "cimento", anchors: [/cao \(livre\)|c[aá]lcio livre/i] },
+    R59: { ctx: "cimento", anchors: [/anidrido carb|\bco\s*2\b/i] },
+    R60: { ctx: "cimento", anchors: [/finura.*peneira|peneira de 75/i] }
+  };
+  return M[row.id] || null;
+}
 
-  let best = null;
-  for (const page of pages) {
-    const pageNorm = normalizeForSearch(page.text);
-    const matched = uniqueKeywords.filter(kw => pageNorm.includes(kw));
-    if (matched.length >= Math.min(2, uniqueKeywords.length)) {
-      const excerpt = excerptAround(page.text, matched[0]) || clean(page.text).slice(0, 260);
-      best = { page: page.page, hits: matched.length, matched, pageText: page.text, excerpt };
-      break;
+// Extrai o primeiro número medido que aparece depois do rótulo na linha,
+// ignorando normas (NBR/NM), unidades entre parênteses, a abertura da peneira e subscritos de fórmula (CO2, SO3).
+function pickNumberAfter(line, anchor) {
+  const m = line.match(anchor);
+  if (!m) return "";
+  const rest = line.slice(m.index + m[0].length)
+    .replace(/ABNT/gi, " ")
+    .replace(/NBR\s*[\d.\-/]+/gi, " ")
+    .replace(/NM\s*[\d.\-/]+/gi, " ")
+    .replace(/ISO[\s/]*[\w.\-]+/gi, " ")
+    .replace(/#\s*\d+/g, " ")
+    .replace(/\d+\s*[μµ]\s*m/gi, " ")
+    .replace(/[μµ]\s*m/gi, " ")
+    .replace(/\([^)]*\)/g, " ");
+  const nums = rest.match(/-?\d{1,3}(?:\.\d{3})+(?:,\d+)?|-?\d+(?:,\d+)?|-?\d+(?:\.\d+)?/g) || [];
+  if (!nums.length) return "";
+  const preferred = nums.find(n => /[.,]/.test(n) || n.replace(/\D/g, "").length >= 3);
+  return preferred || nums[0];
+}
+
+// Procura o valor numérico do ensaio nas linhas das páginas do laudo correspondente.
+function findDocumentaryValue(row, pages) {
+  const spec = rowValueAnchors(row);
+  if (!spec) return null;
+  const ctxMap = detectReportContext(pages);
+  for (const pg of pages) {
+    if (spec.ctx && ctxMap.get(pg.page) !== spec.ctx) continue;
+    for (const line of pg.lines || []) {
+      for (const anchor of spec.anchors) {
+        if (!anchor.test(line)) continue;
+        const value = pickNumberAfter(line, anchor);
+        if (value) return { page: pg.page, value, excerpt: line.slice(0, 200) };
+      }
     }
   }
-  if (!best) return null;
-
-  // Tenta extrair o valor real que aparece no PDF perto de algum termo compatível.
-  let value = "";
-  for (const kw of best.matched) {
-    const extracted = extractMeasuredValue(best.pageText, kw);
-    if (extracted) { value = extracted; break; }
-  }
-  // Sem número claro? Mostra o trecho real localizado no PDF (e não uma mensagem genérica).
-  if (!value) value = clean(best.excerpt).slice(0, 160);
-
-  return {
-    page: best.page,
-    value,
-    excerpt: best.excerpt
-  };
-}
-
-// Extrai o valor medido (número + unidade) que aparece no PDF próximo ao termo localizado.
-function extractMeasuredValue(text, keyword) {
-  const plain = clean(text);
-  const kwNorm = normalizeForSearch(keyword);
-  const idx = normalizeForSearch(plain).indexOf(kwNorm);
-  if (idx < 0) return "";
-  const window = plain.slice(Math.max(0, idx - 25), idx + kwNorm.length + 150)
-    // remove referências normativas para não confundir com valores medidos
-    .replace(/NBR\s*\d+(?:[-/.]\d+)*/gi, " ")
-    .replace(/ISO\s*\d+/gi, " ")
-    .replace(/ASTM\s*[A-Z]?-?\d+/gi, " ")
-    .replace(/#\s*\d+/g, " ")
-    .replace(/n[ºo°]\.?\s*\d+/gi, " ");
-  const unitRe = /(-?\d{1,3}(?:\.\d{3})*,\d+|-?\d+(?:,\d+)?|-?\d+(?:\.\d+)?)\s*(%|MPa|mm|μm|µm|cm|kg\/dm³|kg\/m³|g\/cm³|[ºo°]\s?C)/gi;
-  const vals = [];
-  let m;
-  while ((m = unitRe.exec(window)) !== null) {
-    const num = m[1].trim();
-    const unit = (m[2] || "").replace(/\s+/g, "");
-    // ignora a própria abertura da peneira (ex.: "75 μm"), que é referência e não valor medido
-    if (/μm|µm/i.test(unit) && /(^|\D)0*75$/.test(num)) continue;
-    vals.push(unit ? `${num} ${unit}` : num);
-    if (vals.length >= 4) break;
-  }
-  return unique(vals).join(" · ");
+  return null;
 }
 
 function rebuildFlatData() {
